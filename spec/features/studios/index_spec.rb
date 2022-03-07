@@ -6,8 +6,8 @@ RSpec.describe 'Studio Index', type: :feature do
     @actor2 = Actor.create!(name: "Sue", age: 21)
     @actor3 = Actor.create!(name: "Sam", age: 12)
     @actor4 = Actor.create!(name: "Harry", age: 56)
-    @actor5 = Actor.create!(name: "Harry", age: 56)
-    @actor6 = Actor.create!(name: "Harry", age: 56)
+    @actor5 = Actor.create!(name: "Larry", age: 22)
+    @actor6 = Actor.create!(name: "Pot", age: 7)
 
     @holly=Studio.create!(name: 'Hollywood', location: 'California')
     @bolly=Studio.create!(name: 'Bollywood', location: 'India')

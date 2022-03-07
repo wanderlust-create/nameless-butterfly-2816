@@ -8,3 +8,10 @@
       </div>
       <% end %>
   <h3>Average actor age: <%= @movie.average_actor_age %></h3>
+  <h2>Add an actor to this movie:</h2>
+  <h3><%= form_with url: "/studios/#{@movie.studio_id}/movies/#{@movie.id}", method: :post, local: true do |f| %></h3>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.text_field :movie_id, value: @movie.id, hidden: true %>
+  <%= f.submit %>
+  <% end %>
